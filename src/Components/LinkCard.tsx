@@ -12,10 +12,10 @@ export default function LinkCard({ title, url, clicks, onLinkClick }: LinkCardPr
       target="_blank"
       rel="noopener noreferrer"
       onClick={onLinkClick}
-      className="flex items-center justify-between rounded-xl border border-neutral-200 bg-white px-4 py-3 text-sm font-medium text-neutral-800 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md active:translate-y-0 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-100"
+      className="flex items-center justify-between rounded-2xl border border-black/5 bg-white/80 px-5 py-4 text-sm font-medium text-[#4a3a2f] shadow-sm backdrop-blur-sm transition-shadow duration-200 hover:shadow-md"
     >
       <span>{title}</span>
-      <span className="text-xs text-neutral-400">{clicks}회 클릭</span>
+      <span className="text-xs text-[#a99686]">{clicks}회 클릭</span>
     </a>
   );
 }
